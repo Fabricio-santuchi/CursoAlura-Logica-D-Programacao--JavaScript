@@ -5,6 +5,18 @@ function sortear(){
     let ateNumero = parseInt(document.querySelector('input#ate').value);
     let sorteados = [];
     let numero;
+    
+    //se o numero DO for maior que ATE.
+    if (doNumero >= ateNumero) {
+        alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
+        return;
+    }
+
+    //se quantidade for maior que numeros disponiveis.
+    if (quantidadesDeNumeros > (ateNumero - doNumero + 1)) {
+        alert('Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!');
+        return;
+      }
 
     //console.log.
     console.log(`Quantidade: ${quantidadesDeNumeros} / de: ${doNumero} / ate: ${ateNumero}`);
@@ -16,6 +28,7 @@ function sortear(){
         // Para não repetir o mesmo numero.
         while(sorteados.includes(numero)){
             numero = obterNumeroAleatorio(doNumero, ateNumero);
+            alert('Tentando obter número inédito');
         }
 
         sorteados.push(numero);
