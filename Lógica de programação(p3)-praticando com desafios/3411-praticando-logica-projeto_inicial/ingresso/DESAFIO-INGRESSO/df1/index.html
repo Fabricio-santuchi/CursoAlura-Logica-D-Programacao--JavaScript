@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>df1</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        body,label{
+            background-color: aqua;
+            color: black;
+            font-size: 36px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+        button, input[type=number]{
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
+    <div>
+        <label for="test">Desafio-1:</label>
+        <input type="number" name="test" id="test">
+        <button onclick="testnumero()">test</button>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
