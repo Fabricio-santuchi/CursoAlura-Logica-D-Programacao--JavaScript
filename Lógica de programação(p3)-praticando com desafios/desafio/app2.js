@@ -2,7 +2,7 @@
 
 function valideString(msg) {
     
-    if(msg == ''){
+    if(msg === ''){
         return 'String vazia!'
     }else{
         return 'String com algum valor!'
