@@ -5,13 +5,17 @@ class cliente{
 
 class contaCorrente{
     agencia; 
-    saldo; 
+    _saldo = 0; 
 
     sacar(valor){
-        if(this.saldo >= valor){ // this.saldo = o saldo dessa conta! // dessa conta!
-            this.saldo -= valor;
-        }else{
-            console.log(`Seu saldo é insuficiente! saldo da conta: ${this.saldo}`)
+        if(this._saldo >= valor){ // this.saldo = o saldo dessa conta! // dessa conta!
+            this._saldo -= valor;
+        }
+    }
+
+    depositar(valor){
+        if(valor > 0){
+            this._saldo += valor;
         }
     }
 }
@@ -25,13 +29,9 @@ cliente2.nome = 'Alice';
 cliente2.cpf = 88822233309;
 
 const contaCorrenteRicador = new contaCorrente();
-contaCorrenteRicador.saldo = 0;
 contaCorrenteRicador.agencia = 1001;
-console.log(contaCorrenteRicador.saldo);
-contaCorrenteRicador.saldo = 100;
-console.log(contaCorrenteRicador.saldo);
+contaCorrenteRicador._saldo = 1000;
+contaCorrenteRicador.depositar(100);
 contaCorrenteRicador.sacar(50);
 
-console.log(contaCorrenteRicador.saldo);
-console.log(cliente1);
-console.log(cliente2);
+console.log(contaCorrenteRicador);
