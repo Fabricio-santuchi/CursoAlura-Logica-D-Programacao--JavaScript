@@ -4,14 +4,13 @@ import { ContaCorrente } from "./ContaCorrente.js"; // importa o cliente para co
 const cliente1 = new Cliente('Ricardo',11122233309);
 const cliente2 = new Cliente('Alice',88822233309);
 
-const contaCorrenteRicador = new ContaCorrente();
-contaCorrenteRicador.agencia = 1001;
+const contaCorrenteRicador = new ContaCorrente(cliente1,1001);
+contaCorrenteRicador.depositar(500); 
+const conta2 = new ContaCorrente(cliente1,102);
 
-contaCorrenteRicador.depositar(100);
-contaCorrenteRicador.depositar(100);
-contaCorrenteRicador.depositar(100);
-
-const valorSacado = contaCorrenteRicador.sacar(50);
-console.log(valorSacado);
+let valor = 200;
+contaCorrenteRicador.transferir(valor,conta2); //transferi 200 para conta2.
 
 console.log(contaCorrenteRicador);
+console.log(conta2);
+console.log(ContaCorrente.numeroDeContas);

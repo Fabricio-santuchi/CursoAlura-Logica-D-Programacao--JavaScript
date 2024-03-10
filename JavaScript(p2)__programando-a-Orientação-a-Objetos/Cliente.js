@@ -1,10 +1,14 @@
 // exporta a class cliente para o lugar que quiser puxar.
 export class Cliente{
     nome;
-    cpf; 
+    _cpf; 
 
-    constructor(nome,cpf){
+    get cpf(){
+        return this._cpf;
+    }
+
+    constructor(nome, cpf){
         this.nome = nome;
-        this.cpf = cpf; 
+        this._cpf = cpf; 
     }
 }
