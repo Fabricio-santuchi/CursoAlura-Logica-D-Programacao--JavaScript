@@ -4,6 +4,6 @@ let nome = 'Fabricio';
 let idade = 24;
 let novo = true;
 
-console.log(typeof(nome), nome);
-console.log(typeof(idade), idade);
-console.log(typeof(novo), novo);
+console.log(typeof nome, nome);
+console.log(typeof idade, idade);
+console.log(typeof novo, novo);

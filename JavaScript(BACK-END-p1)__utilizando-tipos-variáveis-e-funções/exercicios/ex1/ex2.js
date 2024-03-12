@@ -2,6 +2,9 @@
 
 let nome = 'Fabricio';
 let sobrenome = 'Santuchi';
-let nomeCompleto = nome + sobrenome;
-let template = `Olá, ${nomeCompleto} Você está bem?`
-console.log(template);
+
+let nomeCompleto = nome + ' ' + sobrenome;
+console.log('Usando operador +: ', nomeCompleto);
+
+let template = `${nome} ${sobrenome}`
+console.log(`Usando template strings: ${template}`);

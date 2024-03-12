@@ -2,7 +2,7 @@
 
 let chovendo = true;
 
-if(chovendo == true){
+if(chovendo){
     console.log(`hj vai chover é bom levar o guarda-chuva!`);
 }else{
     console.log(`hj não vai chover não é preciso levar o guarda-chuva!`);
