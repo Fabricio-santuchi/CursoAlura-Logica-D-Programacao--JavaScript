@@ -1,6 +1,6 @@
-console.log('Trabalhando com Atribuoção de variáveis');
-const nome = 'Fabricio';
-const sobrenome = 'Santuchi';
+console.log("Trabalhando com Atribuoção de variáveis");
+const nome = "Fabricio";
+const sobrenome = "Santuchi";
 
 console.log(`Meu nome é ${nome} ${sobrenome}`);
 

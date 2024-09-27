@@ -1,18 +1,18 @@
-console.log('Boas-vindas.');
+console.log("Boas-vindas.");
 
 //-------------------------------------
 
-let nome = 'Fabricio';
+let nome = "Fabricio";
 console.log(`Olá, ${nome}!`);
 
 //--------------------------------------
 
-let nome1 = 'Fabricio';
+let nome1 = "Fabricio";
 alert(`Olá, ${nome1}!`);
 
 //--------------------------------------
 
-let Lp = prompt('Qual a linguagem de programação que você mais gosta?');
+let Lp = prompt("Qual a linguagem de programação que você mais gosta?");
 console.log(Lp);
 
 //---------------------------------------
@@ -27,44 +27,46 @@ console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`);
 let valor11 = 9;
 let valor22 = 8;
 let resultado1 = valor11 - valor22;
-console.log(`A diferença entre ${valor11} e ${valor22} é igual a ${resultado}.`);
+console.log(
+  `A diferença entre ${valor11} e ${valor22} é igual a ${resultado}.`
+);
 
 //---------------------------------------
 
-let idade = prompt('Digite sua idade');
-if(idade > 17){
-    console.log('É maior de idade!');
-}else{
-    console.log('É menor de idade!');
+let idade = prompt("Digite sua idade");
+if (idade > 17) {
+  console.log("É maior de idade!");
+} else {
+  console.log("É menor de idade!");
 }
 
 //---------------------------------------
 
-var numero = prompt('Digite um valor');
-if(numero > 0){
-    console.log('positivo');
-}else if(numero < 0){
-    console.log('negativo');
-}else{
-    console.log('zero');
+var numero = prompt("Digite um valor");
+if (numero > 0) {
+  console.log("positivo");
+} else if (numero < 0) {
+  console.log("negativo");
+} else {
+  console.log("zero");
 }
 
 //-------------------------------------
 
-let nm = 1
-while(nm <= 10){
-    console.log(nm);
-    nm++;
+let nm = 1;
+while (nm <= 10) {
+  console.log(nm);
+  nm++;
 }
 
 //-------------------------------------
 
 let nota = 7;
 
-if(nota >= 7){
-    console.log('Aprovado');
-}else{
-    console.log('Reprovado');
+if (nota >= 7) {
+  console.log("Aprovado");
+} else {
+  console.log("Reprovado");
 }
 
 //---------------------------------------

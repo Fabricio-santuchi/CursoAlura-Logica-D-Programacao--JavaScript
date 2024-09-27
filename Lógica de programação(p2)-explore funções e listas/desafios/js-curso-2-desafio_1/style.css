@@ -1,22 +1,23 @@
 header {
   text-align: center;
   font-size: 30px;
-  color: #279EFF;
+  color: #279eff;
 }
 
-main, html {
+main,
+html {
   margin: 0;
   padding: 0;
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0C356A;
+  background-color: #0c356a;
 }
 
 .container {
   text-align: center;
-  color: #279EFF;
+  color: #279eff;
 }
 
 .button {
@@ -32,4 +33,3 @@ main, html {
 .button:hover {
   background-color: #2980b9;
 }
-

@@ -1,11 +1,11 @@
 console.log(`Trabalhando com condicionais`);
-const listaDeDestinos = ['Salvador', 'São Paulo', 'Rio de Janeiro'];
+const listaDeDestinos = ["Salvador", "São Paulo", "Rio de Janeiro"];
 
 const idadeComprador = 18;
 const estaAcompanhada = false;
 const temPassagemComprada = true;
 
-console.log('Destinos possíveis: ');
+console.log("Destinos possíveis: ");
 console.log(listaDeDestinos);
 
 // if (idadeComprador >= 18) {
@@ -18,15 +18,14 @@ console.log(listaDeDestinos);
 //     console.log('Menor de idade, Não posso vender');
 // }
 
-console.log('Embarque: \n\n');
-if((idadeComprador >= 18 || estaAcompanhada) && temPassagemComprada){
-    console.log('Boa Viagem!');
-    listaDeDestinos.splice(2, 1);
-}else{
-    console.log('Você não pode embarca');
+console.log("Embarque: \n\n");
+if ((idadeComprador >= 18 || estaAcompanhada) && temPassagemComprada) {
+  console.log("Boa Viagem!");
+  listaDeDestinos.splice(2, 1);
+} else {
+  console.log("Você não pode embarca");
 }
-console.log(listaDeDestinos)
-
+console.log(listaDeDestinos);
 
 // console.log(idadeComprador > 18);
 // console.log(idadeComprador < 18);
